@@ -1,0 +1,268 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+body {
+  background-color: rgb(7, 2, 28);
+
+}
+
+/* ----------- NAVBAR --------- */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
+}
+
+#lang-dropdown {
+  padding: 0.45rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.lang-btn {
+  background-color: red;
+  font-size: medium;
+  font-weight: 700;
+  color: white;
+  padding: 0.45rem 0.8rem;
+  border: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Responsive navbar adjustments */
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    max-width: 120px;
+  }
+}
+
+/* ------------ BODY CONTENT -------------- */
+
+.body-content {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-direction: column;
+}
+
+/* ------------ HERO SECTION -------------- */
+
+.hero-section {
+  background-image: url("./Asserts/heroSection_background.jpg");
+  background-size: cover;
+  height: 80vh;
+  width: 92vw;
+  border-radius: 20px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.content-box {
+  text-align: center;
+  max-width: 33rem;
+}
+
+.content-text {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+
+form {
+  margin-top: 1.5rem;
+}
+
+form input,
+button {
+  margin: 0.5rem auto;
+}
+
+form .emailId {
+  padding: 0.5rem 0.5rem;
+  background-color: rgba(0, 0, 0, 0.771);
+  color: white;
+  border: 1.5px solid rgba(128, 128, 128, 0.755);
+  border-radius: 5px;
+  width: 60%;
+}
+
+/* Responsive hero section */
+@media screen and (max-width: 768px) {
+  .content-text {
+    font-size: 2rem;
+  }
+
+  .content-disc {
+    font-size: 1rem;
+  }
+
+  form .emailId {
+    width: 80%;
+  }
+}
+
+/* ----------- site information section --------- */
+
+#information-section {
+  color: white;
+  margin: 5rem 2rem;
+  background-color: red;
+  padding: 4rem 0;
+  border-radius: 20px;
+  background: linear-gradient(336deg, rgba(70, 0, 0, 0.2881945014333859) 0%, rgba(199, 199, 199, 0.03609366109725143) 100%);
+}
+
+.media-container {
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 40vw;
+  height: auto;
+}
+
+#media {
+  object-fit: cover;
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+}
+
+.info-section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.media-content {
+  width: 23rem;
+  font-weight: 600;
+  font-size: large;
+  padding: 3rem 0;
+}
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .info-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .media-container {
+    width: 80vw;
+  }
+}
+
+hr {
+  margin: 4rem auto;
+  width: 85%;
+  height: 10px;
+  background-color: rgba(98, 98, 98, 0.36);
+  border: none;
+  border-radius: 1px;
+}
+
+/* ------ FAQ Section ------ */
+
+.faq-section {
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+
+.questions {
+  width: 55vw;
+  height: auto;
+  margin: 0.5rem auto;
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  font-size: 1.25rem;
+  justify-content: space-between;
+  font-weight: 400;
+  background-color: #37d99d1f;
+  align-items: center;
+}
+
+/* Responsive FAQ section */
+@media screen and (max-width: 768px) {
+  .questions {
+    width: 90vw;
+  }
+}
+
+/* ---------- footer section ---------- */
+
+footer {
+  color: white;
+  padding: 2rem 0;
+}
+
+.footer-signup-section {
+  /* display: flex; */
+  display: flex;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+
+form .footer-emailId {
+  width: 70%;
+}
+
+.footer-navigation-info {
+  color: rgba(161, 161, 194, 0.695);
+  font-weight: 500;
+}
+
+.footer-nav-container,
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 3rem 0;
+}
+
+.footer-nav-container a {
+  color: inherit;
+  display: block;
+  margin: 1rem 2rem;
+}
+
+
+@media screen and (max-width: 600px) {
+  .footer-nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-emailId {
+    width: 80%;
+  }
+
+  #telephone {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
